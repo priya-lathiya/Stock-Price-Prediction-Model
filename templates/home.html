@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Predictor | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding-top: 50px;
+      color: #000000; 
+    }
+
+    .container {
+      max-width: 500px;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #000000; /* Black header */
+    }
+
+    label, input {
+      color: #000000 !important; /* Force black text on form elements */
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Stock Predictor</h1>
+    <form method="POST" action="/results">
+      <div class="mb-3">
+        <label for="stock" class="form-label">Stock Ticker</label>
+        <input type="text" id="stock" name="stock" class="form-control" value="GOOG" required>
+      </div>
+      <div class="mb-3">
+        <label for="start" class="form-label">Start Date</label>
+        <input type="date" id="start" name="start" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="end" class="form-label">End Date</label>
+        <input type="date" id="end" name="end" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Predict</button>
+    </form>
+  </div>
+
+  <footer>
+    © 2025 Stock Predictor App
+  </footer>
+
+</body>
+</html>
