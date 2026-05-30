@@ -188,10 +188,7 @@ The LSTM model successfully captures historical stock price patterns and generat
 
 ## Notebook
 
-If GitHub notebook preview does not load correctly, view the notebook using:
-
-https://nbviewer.org/github/priya-lathiya/Stock-Price-Prediction-Model/blob/main/Stock_Price_Prediction_LSTM.ipynb
-
+If GitHub notebook preview does not load correctly, view the notebook by downloading the file.
 ---
 
 ## Author
